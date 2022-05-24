@@ -1,2 +1,2 @@
-# btc-rpc
+# bitcoin-rpc
 A simple, efficient, zero-dep Bitcoin RPC interface.
