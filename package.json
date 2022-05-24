@@ -1,6 +1,6 @@
 {
   "name": "@jskitty/bitcoin-rpc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple, efficient, zero-dep Bitcoin RPC interface.",
   "main": "index.js",
   "scripts": {
