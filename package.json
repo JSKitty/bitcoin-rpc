@@ -1,0 +1,19 @@
+{
+  "name": "btc-rpc",
+  "version": "1.0.0",
+  "description": "A simple, efficient, zero-dep Bitcoin RPC interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JSKitty/btc-rpc.git"
+  },
+  "author": "JSKitty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JSKitty/btc-rpc/issues"
+  },
+  "homepage": "https://github.com/JSKitty/btc-rpc#readme"
+}
