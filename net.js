@@ -3,6 +3,13 @@
 const http = require('http');
 const https = require('https');
 
+/**
+  * Send a request to the given endpoint
+  * @param {string} endpoint - The URL to send the request to
+  * @param {string} method - The HTTP method to use
+  * @param {string} body - The body of the request
+  * @returns {Promise<string>} The response
+  */
 const request = async (endpoint, method, body) => {
     const url = new URL(endpoint);
     const opts = {
@@ -44,6 +51,12 @@ const request = async (endpoint, method, body) => {
     });
 };
 
+/**
+ * Alias to {@link request} with POST method and body
+ * @param {string} endpoint - The URL to send the request to
+ * @param {any} body - The body of the request
+ * @returns {Promise<string>} The response
+ */
 exports.post = async (endpoint, body) => {
     return await request(endpoint, 'POST', body);
 };

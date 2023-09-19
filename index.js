@@ -3,6 +3,15 @@
 const NET = require('./net');
 
 class RPC {
+    /** 
+    * A Bitcoin RPC Client
+    * @param {string} user - The RPC username
+    * @param {string} pass - The RPC password
+    * @param {string} host - The RPC host
+    * @param {number} port - The RPC port
+    * @example
+    * new RPC('user', 'pass', '127.0.0.1', 8332);
+    */
     constructor(user, pass, host, port) {
         this.user = user;
         this.pass = pass;
@@ -11,6 +20,12 @@ class RPC {
         this._id = 0;
     }
 
+    /**
+     * Call an RPC method
+     * 
+     * This will return the exact `result` of the RPC output, which may be a `string` or a JSON `object`.
+     * @returns {Promise<Object|string>} The result of the RPC call
+     */
     async call() {
         try {
             const request = {
